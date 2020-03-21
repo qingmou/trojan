@@ -168,7 +168,7 @@ EOF
 	#设置伪装站
 	rm -rf /usr/share/nginx/html/*
 	cd /usr/share/nginx/html/
-	wget https://github.com/atrandys/v2ray-ws-tls/raw/master/web.zip
+	wget https://github.com/qingmou/trojan/raw/master/web.zip
     	unzip web.zip
 	systemctl stop nginx
 	sleep 5
@@ -191,7 +191,7 @@ EOF
 	wget https://github.com/trojan-gfw/trojan/releases/download/v${latest_version}/trojan-${latest_version}-linux-amd64.tar.xz
 	tar xf trojan-${latest_version}-linux-amd64.tar.xz
 	#下载trojan客户端
-	wget https://github.com/atrandys/trojan/raw/master/trojan-cli.zip
+	wget https://github.com/qingmou/trojan/raw/master/trojan-cli.zip
 	wget -P /usr/src/trojan-temp https://github.com/trojan-gfw/trojan/releases/download/v${latest_version}/trojan-${latest_version}-win.zip
 	unzip trojan-cli.zip
 	unzip /usr/src/trojan-temp/trojan-${latest_version}-win.zip -d /usr/src/trojan-temp/
